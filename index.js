@@ -17,14 +17,14 @@ inputDetails.addEventListener("submit", (event) => {
 addButton.addEventListener("click",(event)=>{
     console.log(inputUrl.value)
     
-    // if(inputUrl.value!=="images\headphone2.jpg" || inputUrl.value!=="images\laptop.webp" || inputUrl.value!=="images\phone1.png")
-    // {
-    //     error.innerText = "This url is not present";
-    //     setTimeout(() => {
-    //         error.innerText = "";
-    //     }, 2000);
-    // }
-    // else{
+    if(inputUrl.value=="")
+    {
+        error.innerText = "Enter url";
+        setTimeout(() => {
+            error.innerText = "";
+        }, 2000);
+    }
+    else{
         
     const outputLi=document.createElement("li");
     outputList.appendChild(outputLi);
@@ -104,7 +104,7 @@ mobileButton.addEventListener("click",()=>{
         mobile[i].classList.remove("display_none");
     }
 })
-    // }
+    }
     
 })
 
