@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filtered Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Filterable Gallery</h1>
+    <h4>Add Product</h4>
+
+    <form class="input_detail">
+        Enter Image URL:<input type="text" class="input_url" placeholder="Enter url" >
+        Select Type: <select class="item_name">
+            <option value="all">All</option>
+            <option value="headphone">Headphone</option>
+            <option value="laptop">Laptop</option>
+            <option value="mobile">Mobile</option>
+        </select>
+        <input type="submit" class="add_btn btn" value="Add">
+    </form>
+    <div class="error"></div>
+
+    <section class="filter_buttons">
+        <input type="submit" class="btn all_btn" value="All">
+        <input type="submit" class="btn headphone_btn" value="Headphone">
+        <input type="submit" class="btn laptop_btn" value="Laptop">
+        <input type="submit" class="btn mobile_btn" value="Mobiles">
+    </section>
+
+    <ul class="output_list"></ul>
+
+    <script src="index.js"></script>
+</body>
+</html>
