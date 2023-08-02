@@ -59,13 +59,13 @@ addButton.addEventListener("click",(event)=>{
     outputLi.classList.add("mobile");
    }
 
+//------------------------------------------------------------------------------------------------------------
+
    const all=document.getElementsByClassName("li_decoration");
    const headphone= document.getElementsByClassName("headphone");
    const laptop=document.getElementsByClassName("laptop");
    const mobile=document.getElementsByClassName("mobile");
 
-
-   
    filterButtons.addEventListener("submit",(event)=>{
     event.preventDefault();
 })
